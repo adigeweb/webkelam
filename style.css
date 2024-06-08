@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(to right, pink 25%, lightblue 75%, pink 100%);
+    background-size: 300vw 100vh;
+    background-position-x: 0;
+    background-attachment: fixed;
+    animation: 20s bgMove linear infinite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    font-size: 75px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bolder;
+    color: transparent;
+    text-shadow: 5px 5px 0 rgba(255, 255, 255, .5);
+    pointer-events: none;
+    user-select: none;
+}
+
+.question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, .5);
+    color: rgb(30, 30, 30);
+    padding: 2rem;
+    font-size: 30px;
+    letter-spacing: .05rem;
+    border-radius: 1em;
+}
+
+.type {
+    display: flex;
+    justify-content: center;
+}
+
+input.answer {
+    height: 4rem;
+    width: 50%;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    font-size: 30px;
+}
+
+button, select {
+    height: 4rem;
+    text-align: center;
+    text-align: center;
+    border: none;
+    border-radius: .5em;
+    font-size: 30px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    color: white;
+    background: black;
+}
+
+button.pass {
+    border-radius: 0;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.start p {
+    font-size: 30px;
+}
+
+p.level select[data-chosen=kolay] {
+    background: limegreen;
+}
+
+p.level select[data-chosen=orta] {
+    background: yellow;
+}
+
+p.level select[data-chosen=zor] {
+    background: red;
+}
+
+.start, .finish {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 2rem;
+    z-index: 999;
+}
+
+.finish { display: none; }
+
+select:focus { outline: none; }
+
+select:not(:disabled):hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+}
+
+.stats {
+    display: flex;
+    gap: .5rem;
+}
+
+p:has(select) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+h2:has(.wps) {
+    font-size: 30px;
+    color: darkslateblue;
+}
+
+@keyframes bgMove {
+    0%, 100% {
+        background-position-x: 0;
+    }
+    50% {
+        background-position-x: 100%;
+    }
+}

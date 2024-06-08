@@ -1,0 +1,8 @@
+{
+    "kelimeler": {
+        "kolay": ["elma", "armut", "kapı",  "arkadaş", "mobilya", "hikaye", "islam", "zaman", "yılan", "ıslak", "manda", "kazak", "kedi", "köpek", "telefon", "üst", "alt", "anlam", "kelime", "orman", "ağaç", "madde", "sarı", "hastalık", "insan", "marka", "kitap", "kalem", "silgi"],
+        "orta": ["mandal", "menteşe", "mandalina", "mandıra", "saman", "arif", "satranç", "çağ", "erime", "ısı", "yazılı", "cephe", "ceset", "cesur", "cevap", "cevi̇z", "cevher", "eşek", "arka", "gazete", "meslektaş", "nesil", "meraklı", "teşbih", "araba", "sahip", "koru", "iskender", "şebeke", "bisiklet", "insanlık", "bacı", "birader", "vasıf"],
+        "zor": ["işportacı", "maneviyat", "ithaf", "destur", "velhasıl", "vesselam", "cenup", "cepçi̇", "ceren", "kömüş", "milenyum", "tonsürton", "ruh", "fedai", "neşter", "midibüs", "tekzip", "ıslah", "siyam", "iskambil", "menengiç", "teleskop"],
+        "atasozlu": ["elma", "araba", "akçe", "ağaç", "ayı", "ceviz"]
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="header">bir isim</div>
+        <div class="start">
+            <h1>Merhaba!</h1>
+            <p class="type">Tür: <select>
+                <option value="karma">Karma</option>
+                <option value="anlam">Anlam Bulma</option>
+                <option value="atasozu">Atasözü Bulma</option>
+            </select></p>
+            <p class="level">Zorluk: <select data-chosen="orta" onchange="this.dataset.chosen = this.value;">
+                <option value="kolay">Kolay</option>
+                <option value="orta" selected>Orta</option>
+                <option value="zor">Zor</option>
+            </select></p>
+            <p class="length"><select>
+                <option value="30">30</option>
+                <option value="45">45</option>
+                <option value="60" selected>60</option>
+                <option value="90">90</option>
+                <option value="120">120</option>
+            </select> saniye</p>
+            <button class="go">Başla</button>
+        </div>
+        <div class="finish">
+            <h1>Süre Bitti!</h1>
+            <h2>Skor: <span class="last-score">21</span></h2>
+            <h2><span class="wps">3</span> kelime/saniye</h2>
+        </div>
+        <div class="container">
+            <div class="question">
+                <p class="stats"><span class="score">0</span> puan | <span class="time">n</span> saniye</p>
+                <p class="text">
+                    Yükleniyor...
+                </p>
+                <div class="type">
+                    <input class="answer" type="text" />
+                    <button class="pass">Pas</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="script.js"></script>
