@@ -44,7 +44,7 @@ window.addEventListener("load", () => {
         var type2 = type;
         if (type == "karma") type2 = (Math.random() >= .5 ? "anlam" : "atasozu");
         var kelime = liste[Math.floor(Math.random() * liste.length)];
-        fetch(`https://sozluk.gov.tr/gts?ara=${kelime}`, { mode: "cors", method: "GET" })
+        fetch(`https://sozluk.gov.tr/gts?ara=${kelime}`)
             .then(res => res.json())
             .then(data => {
                 switch (type2) {
