@@ -7,7 +7,7 @@
         <title>Document</title>
     </head>
     <body>
-        <div class="header">bir isim</div>
+        <div class="header">webkelam</div>
         <div class="start">
             <h1>Merhaba!</h1>
             <p class="type">Tür: <select>
@@ -21,6 +21,7 @@
                 <option value="zor">Zor</option>
             </select></p>
             <p class="length"><select>
+                <option value="5" class="test-mode">5</option>
                 <option value="30">30</option>
                 <option value="45">45</option>
                 <option value="60" selected>60</option>
@@ -33,6 +34,7 @@
             <h1>Süre Bitti!</h1>
             <h2>Skor: <span class="last-score">21</span></h2>
             <h2><span class="wps">3</span> kelime/saniye</h2>
+            <button class="restart">Tekrar Dene</button>
         </div>
         <div class="container">
             <div class="question">
@@ -45,6 +47,9 @@
                     <button class="pass">Pas</button>
                 </div>
             </div>
+        </div>
+        <div class="test-mode test-mode-warning" data-custom-display="flex">
+            Test Modu etkin. Kapatmak için: <kbd>Shift + F8</kbd>
         </div>
     </body>
 </html>

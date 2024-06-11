@@ -8,7 +8,8 @@ const answer = document.querySelector(".type input.answer"),
       last_score = document.querySelector("span.last-score"),
       wps = document.querySelector("span.wps"),
       type_sel = document.querySelector("p.type select"),
-      level_sel = document.querySelector("p.level select");
+      level_sel = document.querySelector("p.level select"),
+      restart_btn = document.querySelector("button.restart");
 
 window.addEventListener("keyup", (event) => {
     if (event.key == "Enter") pass_btn.click();
@@ -102,5 +103,22 @@ window.addEventListener("load", () => {
     type_sel.addEventListener("change", () => {
         if (type_sel.value == "atasozu") level_sel.disabled = true;
         else level_sel.disabled = false;
+    });
+    restart_btn.addEventListener("click", () => { location.reload() });
+    var test_mode = false;
+    window.addEventListener("keyup", (event) => {
+        if (event.key == "F8" && event.shiftKey) {
+            if (!test_mode) {
+                document.querySelectorAll(".test-mode").forEach(item => {
+                    item.style.display = (item.getAttribute("data-custom-display") ? item.getAttribute("data-custom-display") : "block");
+                });
+            }
+            else {
+                document.querySelectorAll(".test-mode").forEach(item => {
+                    item.style.display = "none";
+                });
+            }
+            test_mode = !test_mode;
+        }
     });
 });

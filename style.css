@@ -130,6 +130,24 @@ h2:has(.wps) {
     color: darkslateblue;
 }
 
+.test-mode {
+    display: none;
+}
+
+.test-mode-warning {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    color: white;
+    background: goldenrod;
+    line-height: 100%;
+}
+
 @keyframes bgMove {
     0%, 100% {
         background-position-x: 0;
